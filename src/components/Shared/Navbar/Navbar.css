@@ -1,0 +1,55 @@
+div#navbarsExample09 {
+    margin-left: 38%;
+}
+nav.navbar.navbar-expand-lg.navbar-light.rounded {
+    width: 100%;
+}
+.header.container {
+    position: absolute;
+    z-index: 1000;
+    left: 14%;
+    /* background-color: black; */
+}
+nav{
+    box-sizing: border-box;
+}
+li.nav-item.nv {
+    padding-top: 10px;
+}
+.navbar li a{
+color: chartreuse;
+}
+.navbar li a:hover {
+    text-decoration: none;
+    color: white;
+}
+.navbar li{
+    font-family: 'Roboto', sans-serif;
+    color: #3c3c3c;
+    padding-left: 7%;
+    font-weight: 600;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 0;
+    border: 1px solid red;
+}
+.navbar-light .navbar-brand {
+    color: #ffeb3b;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgb(255 255 255);
+}
+
+@media (max-width: 688px){
+    .navbar-light .navbar-brand {
+        color: #ffeb3b;;
+        margin-left: 6%;
+        font-size: 2rem!important;
+    }
+    .deleteIcon {
+        width: 25%;
+    }
+}

@@ -1,0 +1,41 @@
+import React from 'react';
+import './ServiceDetails.css'
+import servicePhoto from '../../../images/serviceImg.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+const ServiceDetails = ({service}) => {
+    return (
+        <div className="text-center card ServiceDetails">
+            {/* {
+                service.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${service.image.img}`}/>
+                :
+                <img style={{height: '200px'}} className="img-fluid mb-3" src={`https://rocky-forest-80852.herokuapp.com/${service.img}`} alt=""/>
+            } */}
+            {/* <img style={{height: '200px'}} className="img-fluid mb-3" src={`${service.image}`} alt=""/>
+            <h4>{service.serviceTitle}</h4>
+            <p className="description">{service.description}</p> */}
+            {/* <p> <FontAwesomeIcon className="text-primary" icon={faPhoneAlt}/> +880-188-934789</p> */}
+
+
+            
+                
+                    {/* {
+                        service.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${service.image.img}`}/>
+                        :
+                        <img style={{height: '200px'}} className="img-fluid mb-3" src={`https://rocky-forest-80852.herokuapp.com/${service.img}`} alt=""/>
+                    } */}
+                    <img style={{height: '200px'}} className="img-fluid mb-3" src={`${service.image}`} alt=""/>
+                    <div class="card-body">
+                    <h5 class="card-title">{service.serviceTitle}</h5>
+                    <p class="card-text">{service.description}</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+               
+            
+        </div>
+    );
+};
+
+export default ServiceDetails;
