@@ -49,7 +49,7 @@ const Footer = () => {
                                 <li className="list-inline-item"><a href="//instagram.com"><FontAwesomeIcon className="icon" icon={faInstagram} /></a></li>
                             </ul>
                             <div className="mt-5">
-                                <h6>Call now</h6>
+                                <h6 style={{color:'yellow!important'}}>Call now</h6>
                                 <button className="btn btn-primary">+2025550295</button>
                             </div>
                     </FooterDetails>

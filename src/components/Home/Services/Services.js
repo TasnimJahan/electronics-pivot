@@ -6,19 +6,19 @@ const Services = () => {
     const services = [
         {
             _id:"sfj76s5fd5sdf678sd5df",
-            serviceTitle:"as",
+            serviceTitle:"Computer Repair",
             description: "asdsda asdsad ewre rew rwgdg dfgds eter terte tetete etert et ertet ertertre sdasd",
             image:servicePhoto
         },
         {
             _id:"sfj76s5fd5sdf678sd5df",
-            serviceTitle:"as",
+            serviceTitle:"Mobile Repair",
             description: "asdasda asdsad ewre rew rwgdg dfgds eter terte tetete etert et ertet ertertre sdsd",
             image:servicePhoto
         },
         {
             _id:"sfj76s5fd5sdf678sd5df",
-            serviceTitle:"as",
+            serviceTitle:"Television Repair",
             description: "asda asdsad ewre rew rwgdg dfgds eter terte tetete etert et ertet ertertre sd",
             image:servicePhoto
         }
