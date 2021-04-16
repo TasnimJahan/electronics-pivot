@@ -1,0 +1,83 @@
+.addService label,input{
+    width:45%;
+    margin-left: 3%;
+}
+.addService h2{
+    text-align:left;
+    margin-top: 5%;
+}
+.addService{
+    margin-left: 20%;
+    top: 0;
+    width: 100%;
+    position: absolute;
+
+}
+.addService input{
+    width: 77%;
+    margin-left: 3%;
+    border: none;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+    background: #f3c247;;
+}
+#submit {
+    border: 2px solid blue;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 5%;
+    background: greenyellow;
+    border-radius: 20px;
+    margin-left: 9%;
+}
+.addService form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    margin-bottom: 3%;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+    padding: 2%;
+    background-image:  linear-gradient(
+        40deg
+        , #ff07a7,#ff5722);
+    color: white;
+    font-size: 1.3rem;
+}
+span.description {
+    margin-left: 3%;
+}
+span.priceSection{
+    margin-left: 2%;
+}
+span.nameSection,.email{
+    margin-left: 2%;
+}
+span.photo{
+    margin-left: 2%;
+}
+@media (max-width: 688px){
+    #submit{
+        margin-top:0%!important;
+        width: 30%!important;
+    }
+    .addService form {
+        display: inline-block;
+        width: 78%;
+        margin-top: 1%important;
+        box-shadow: 10px 10px 20px grey;
+        border-radius: 10px;
+        padding: 2%;
+        background: #d6282f;
+        color: white;
+        font-size: 1rem;
+    }
+    
+.addService input{
+    width: 100%!important;
+}
+.addService label{
+    width: 75%!important;
+    margin-left: 0%!important;
+}
+}

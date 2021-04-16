@@ -69,7 +69,7 @@ const Sidebar = () => {
                     </li>
                 
                 <li>
-                    <Link to="/dashboard/appointment" className="text-white">
+                    <Link to="/addServices" className="text-white">
                         <FontAwesomeIcon className="icons" icon={faPlus} /> <span style={{marginLeft:'10%'}}>Add Service</span> 
                     </Link>
                 </li>
