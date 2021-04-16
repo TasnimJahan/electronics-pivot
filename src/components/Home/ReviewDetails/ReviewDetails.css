@@ -1,0 +1,18 @@
+.col-md-3.reviewDetails.col-sm-5.d-flex.justify-content-center.align-items-center.m-4:hover {
+    background-color: chartreuse;
+}
+.col-md-3.reviewDetails.col-sm-5.d-flex.justify-content-center.align-items-center.m-4 {
+    /* background-color: #ffeb3b; */
+    background-image: url('../../../images//reviewBg.jpg');
+    /* background-image: linear-gradient(90deg,#eb01a5, #eb01a5),url('../../../images//reviewBg.jpg'); */
+    background-attachment: fixed;
+    background-position: center;
+
+    
+}
+    .review {
+        background-color: deepskyblue;
+        padding: 7%;
+        opacity: .9;
+        color: navy;
+    }
