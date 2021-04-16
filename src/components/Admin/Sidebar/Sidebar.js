@@ -76,7 +76,7 @@ const Sidebar = () => {
                 
                     <div>
                         <li>
-                            <Link to="/dashboard/allPatients" className="text-white">
+                            <Link to="/makeAdmin" className="text-white">
                                 <FontAwesomeIcon className="icons" icon={faUserShield} /> <span  style={{marginLeft:'7%'}}>Make Admin</span>
                             </Link>
                         </li>

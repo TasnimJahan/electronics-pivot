@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Admin from "./components/Admin/Admin/Admin";
+import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";
 import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
 
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/admin">
               <Admin />
+            </Route>
+            <Route path="/makeAdmin">
+              <MakeAdmin />
             </Route>
             {/* <Route path="/appointment">
               <Appointment />
