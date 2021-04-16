@@ -1,3 +1,11 @@
 .ServiceDetails{
-    border:1px solid black;
+    /* border:1px solid black; */
+}
+.card-deck .card {
+    background-color: none!important;
+    margin-left: 15px;
+    background: transparent;
+    color: chartreuse;
+    font-size: 1.2rem;
+    border: 1px solid;
 }
