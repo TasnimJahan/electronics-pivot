@@ -7,8 +7,8 @@ const Contact = () => {
             <div className="container">
                 <div className="section-header d-flex justify-content-center">
                     <div className="text-center mb-3">
-                        <h5 className="text-primary text-uppercase">contact us</h5>
-                        <h1 className="text-white">Always Connect with us</h1>
+                    <h5 className="text-center  text-brand p-3">Contact Us</h5>
+                        <h1 className="text-white">24/7 hour Connect with us</h1>
                     </div>
                 </div>
                 <div className="col-md-9 mx-auto">

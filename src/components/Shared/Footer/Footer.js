@@ -37,7 +37,7 @@ const ourAddress = [
 const Footer = () => {
     return (
         <footer className="footer-area clear-both">
-            <div className="container pt-5">
+            <div className=" footer pt-5">
                 <div className="row py-5">
                     <FooterDetails key={1} menuTitle={"."} menuItems={noNamed}></FooterDetails>
                     <FooterDetails key={2} menuTitle={"Services"} menuItems={services}></FooterDetails>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
                 <div className="copyRight text-center">
                     {/* <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p> */}
-                    <p>Copyright Tasnim Jahan {(new Date()).getFullYear()}, All Rights Reserved</p>
+                    <p style={{color: 'yellow'}}>Copyright Tasnim Jahan {(new Date()).getFullYear()}, All Rights Reserved</p>
                 </div>
             </div>
         </footer>

@@ -1,7 +1,8 @@
 .contacts{
-    /* background-image: url('../../../images/appoinmentBg.png'); */
+    background-image: url('../../../images/contact.jpg');
     position: relative;
     z-index: 1;
+    background-position: bottom;
 }
 .contacts::before{
     position: absolute;
