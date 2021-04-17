@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './Book.css'
 import { useContext } from 'react';
+
 // import './CheckOut.css';
 // import 'date-fns';
 // import Grid from '@material-ui/core/Grid';
@@ -14,6 +15,7 @@ import { useContext } from 'react';
 // import { Button } from '@material-ui/core';
 import { UserContext } from '../../../App';
 import Sidebar from '../Sidebar/Sidebar';
+import ProcessPayment from '../ProcessPayment/ProcessPayment';
 // import Orders from '../Orders/Orders';
 
 
@@ -54,6 +56,7 @@ const Book = () => {
                 </div>
                 <div className="paymentDetails">
                     <p>Pay With:</p>
+                    <ProcessPayment/>
                 </div>
             </div>    
         </div>
