@@ -36,8 +36,11 @@ function App() {
             <Route path="/addReview">
               <AddReview/>
             </Route>
-            <Route path="/book">
+            {/* <Route path="/book">
               <Book/>
+            </Route> */}
+            <Route path="/book/:id">
+              <Book></Book>
             </Route>
             {/* <Route path="/appointment">
               <Appointment />

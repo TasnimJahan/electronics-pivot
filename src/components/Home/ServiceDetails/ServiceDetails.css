@@ -12,3 +12,10 @@
 .ServiceDetails img.img-fluid.mb-3 {
     width: 100%;
 }
+.details{
+    color: chartreuse;
+}
+a:hover {
+    list-style-type: none;
+    text-decoration: none;
+}
