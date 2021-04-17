@@ -6,7 +6,7 @@ import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 const ServiceDetails = ({service}) => {
     console.log(service);
     return (
-        <div className="text-center card shadow ServiceDetails"> 
+        <div className="text-center shadow ServiceDetails d-flex flex-column  col-md-3 p-3 col-sm-5 d-flex justify-content-center align-items-center m-4"> 
                     {/* {
                         service.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${service.image.img}`}/>
                         :

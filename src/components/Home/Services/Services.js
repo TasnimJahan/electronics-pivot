@@ -12,14 +12,12 @@ const Services = () => {
 
     return (
         <section className="services p-5">
-            <div className="container">
                 <h5 className="text-center  text-brand p-3">Our Services</h5>
-                <div className=" card-deck ">
+                <div className=" row justify-content-center ">
                     {
                         services.map(service =><ServiceDetails key={service._id} service={service} />)
                     }
                 </div>
-            </div>
         </section>
     );
 };
