@@ -15,7 +15,7 @@ const ReviewDetails = ({review}) => {
                     <img style={{height: '50px'}} className="img-fluid mb-3" src={reviewIcon} alt=""/>
                     <div class="ms-2">
                         <h3>{review.name}</h3>
-                        <p>{review.description}</p>
+                        <p>{review.review}</p>
                     </div>
                     </div>
         </div>

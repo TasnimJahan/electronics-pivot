@@ -1,19 +1,19 @@
-.addService label,input{
+.addReview label,input{
     width:45%;
     margin-left: 3%;
 }
-.addService h2{
+.addReview h2{
     text-align:left;
     margin-top: 5%;
 }
-.addService{
+.form.addReview{
     margin-left: 20%;
     top: 0;
     width: 100%;
     position: absolute;
 
 }
-.addService input{
+.addReview input{
     width: 77%;
     margin-left: 3%;
     border: none;
@@ -21,7 +21,7 @@
     border-radius: 10px;
     background: #f3c247;;
 }
-#submit {
+#submitBtn {
     border: 2px solid blue;
     width: 7rem;
     height: 2rem;
@@ -30,7 +30,11 @@
     border-radius: 20px;
     margin-left: 5%;
 }
-.addService form {
+#review{
+    border: 2px solid blue;
+    height: 10rem;
+}
+.addReview form {
     display: flex;
     flex-wrap: wrap;
     width: 78%;
@@ -44,24 +48,27 @@
     color: white;
     font-size: 1.3rem;
 }
-span.description {
-    margin-left: 3%;
+span.reviewSection {
+    /* margin-left: -56%; */
 }
 span.priceSection{
+    /* border: 1px solid blue; */
+    margin-left: -62%;
+}
+span.nameSection,.reviewSection{
+    /* border: 1px solid blue; */
     margin-left: 2%;
 }
-span.nameSection,.email{
-    margin-left: 2%;
-}
-span.photo{
-    margin-left: 2%;
+span.review{
+    /* border: 1px solid blue; */
+    margin-left: -48%;
 }
 @media (max-width: 688px){
     #submit{
         margin-top:0%!important;
         width: 30%!important;
     }
-    .addService form {
+    .addReview form {
         display: inline-block;
         width: 78%;
         margin-top: 1%important;
@@ -73,10 +80,10 @@ span.photo{
         font-size: 1rem;
     }
     
-.addService input{
+.addReview input{
     width: 100%!important;
 }
-.addService label{
+.addReview label{
     width: 75%!important;
     margin-left: 0%!important;
 }

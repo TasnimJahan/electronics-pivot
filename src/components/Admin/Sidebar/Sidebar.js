@@ -96,7 +96,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/doctor/setting" className="text-white" >
+                            <Link to="/addReview" className="text-white" >
                             <FontAwesomeIcon className="icons" icon={faComments} /> <span style={{marginLeft:'9%'}}>Review</span>
                             </Link>
                         </li>

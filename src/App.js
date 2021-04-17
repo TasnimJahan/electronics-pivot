@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
+import AddReview from "./components/Admin/AddReview/AddReview";
 import AddServices from "./components/Admin/Admin/AddServices/AddServices";
 import Admin from "./components/Admin/Admin/Admin";
 import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/addServices">
               <AddServices/>
+            </Route>
+            <Route path="/addReview">
+              <AddReview/>
             </Route>
             {/* <Route path="/appointment">
               <Appointment />
