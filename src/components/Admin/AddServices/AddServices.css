@@ -4,12 +4,18 @@
 }
 .addService h2{
     text-align:left;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+}
+.headSection{
+    /* border: 1px solid red; */
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 90%;
 }
 .addService{
     margin-left: 20%;
     top: 0;
-    width: 100%;
+    width: 80%;
     position: absolute;
 
 }

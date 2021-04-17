@@ -2,14 +2,20 @@
     width:45%;
     margin-left: 3%;
 }
-.addReview h2{
-    text-align:left;
-    margin-top: 5%;
+.headSection{
+    /* border: 1px solid red; */
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 90%;
+}
+.addReview h2 {
+    text-align: left;
+    /* border: 1px solid red; */
 }
 .form.addReview{
     margin-left: 20%;
     top: 0;
-    width: 100%;
+    width: 80%;
     position: absolute;
 
 }

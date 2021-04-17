@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
-import Sidebar from '../../Sidebar/Sidebar';
+import { UserContext } from '../../../App';
+import Sidebar from '../Sidebar/Sidebar';
 const axios = require('axios').default;
 import './AddServices.css'
 
@@ -45,12 +46,17 @@ const AddServices = () => {
             console.log(error);
           });
     }
-
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     return (
         <div>
             <Sidebar/>
             <div className="addService">   
-            <h2>Add Services:</h2>       
+            <div className=" headSection d-flex justify-content-between">
+                <h2>Add Services</h2>
+                <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || " "}</h4>
+            </div> 
+
+                   
             <form onSubmit={handleSubmit(onSubmit)}>
             
                 <label>

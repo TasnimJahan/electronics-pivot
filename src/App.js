@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AddReview from "./components/Admin/AddReview/AddReview";
-import AddServices from "./components/Admin/Admin/AddServices/AddServices";
+import AddServices from "./components/Admin/AddServices/AddServices";
 import Admin from "./components/Admin/Admin/Admin";
 import Book from "./components/Admin/Book/Book";
 import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";

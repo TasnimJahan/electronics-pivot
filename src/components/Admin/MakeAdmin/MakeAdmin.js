@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
+import { UserContext } from '../../../App';
 import Sidebar from '../Sidebar/Sidebar';
 const axios = require('axios').default;
 import './makeAdmin.css'
@@ -23,12 +24,17 @@ const MakeAdmin = () => {
         })
         .then(response => console.log("server side response", response))
     };
-
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     return (
         <div className=""> 
         <Sidebar/>  
         <div className="form makeAdmin">
-        <h2>Make an Admin</h2>       
+        <div className=" headSection d-flex justify-content-between">
+            <h2>Make an Admin</h2> 
+            <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || " "}</h4>
+        </div> 
+
+              
             <form className="col-md-8" onSubmit={handleSubmit(onSubmit)}>
 
                 <label>

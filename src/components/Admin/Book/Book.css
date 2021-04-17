@@ -1,0 +1,86 @@
+.makeAdmin label,input{
+    width:45%;
+    margin-left: 3%;
+}
+.makeAdmin h2{
+    text-align:left;
+    margin-top: 5%;
+}
+.makeAdmin{
+    margin-left: 20%;
+    top: 0;
+    width: 80%;
+    position: absolute;
+
+}
+.makeAdmin input{
+    width: 77%;
+    margin-left: 3%;
+    border: none;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+    background: #f3c247;;
+}
+#submit {
+    border: 2px solid blue;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 5%;
+    background: greenyellow;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.makeAdmin form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    margin-bottom: 3%;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+    padding: 2%;
+    background-image:  linear-gradient(
+        40deg
+        , #ff07a7,#ff5722);
+    color: white;
+    font-size: 1.3rem;
+}
+span.descriptionSection {
+    margin-left: -56%;
+}
+span.priceSection{
+    /* border: 1px solid blue; */
+    margin-left: -62%;
+}
+span.nameSection,.email{
+    /* border: 1px solid blue; */
+    margin-left: 2%;
+}
+span.photoSection{
+    /* border: 1px solid blue; */
+    margin-left: -48%;
+}
+@media (max-width: 688px){
+    #submit{
+        margin-top:0%!important;
+        width: 30%!important;
+    }
+    .makeAdmin form {
+        display: inline-block;
+        width: 78%;
+        margin-top: 1%important;
+        box-shadow: 10px 10px 20px grey;
+        border-radius: 10px;
+        padding: 2%;
+        background: #d6282f;
+        color: white;
+        font-size: 1rem;
+    }
+    
+.makeAdmin input{
+    width: 100%!important;
+}
+.makeAdmin label{
+    width: 75%!important;
+    margin-left: 0%!important;
+}
+}

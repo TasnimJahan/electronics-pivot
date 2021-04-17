@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-
+import './Book.css'
 import { useContext } from 'react';
 // import './CheckOut.css';
 // import 'date-fns';
@@ -13,6 +13,7 @@ import { useContext } from 'react';
 // } from '@material-ui/pickers';
 // import { Button } from '@material-ui/core';
 import { UserContext } from '../../../App';
+import Sidebar from '../Sidebar/Sidebar';
 // import Orders from '../Orders/Orders';
 
 
@@ -39,7 +40,14 @@ const Book = () => {
 
     return (
         <div>
-            <h1>Book section id is= {id}</h1>
+            <Sidebar/>  
+            <div className="makeAdmin">
+                <h2>Make an Admin</h2> 
+                <h5>Book section id is= {id}</h5>
+                <h5>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || "For test Tasnim"}</h5>
+                <h5>{loggedInUser.email || "email here for test"}</h5>
+                <h5>{book.serviceTitle}</h5>
+            </div>    
         </div>
     );
 };
