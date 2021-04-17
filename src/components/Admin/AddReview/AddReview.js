@@ -32,7 +32,7 @@ const AddReview = () => {
         <div className="form addReview">
         <div className=" headSection d-flex justify-content-between">
             <h2>Add review</h2>
-            <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || "For test Tasnim"}</h4>
+            <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || " "}</h4>
         </div>      
             <form className="col-md-8" onSubmit={handleSubmit(onSubmit)}>
 

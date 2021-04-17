@@ -1,19 +1,30 @@
-.makeAdmin label,input{
+.book label,input{
     width:45%;
     margin-left: 3%;
 }
-.makeAdmin h2{
+.book h2{
     text-align:left;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
-.makeAdmin{
+.headSection{
+    /* border: 1px solid red; */
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 90%;
+}
+.userDetail h5{
+    width: 50%;
+    padding: 1%;
+    background: #f3f0f0;
+}
+.book{
     margin-left: 20%;
     top: 0;
     width: 80%;
     position: absolute;
 
 }
-.makeAdmin input{
+.book input{
     width: 77%;
     margin-left: 3%;
     border: none;
@@ -30,7 +41,7 @@
     border-radius: 20px;
     margin-left: 5%;
 }
-.makeAdmin form {
+.book form {
     display: flex;
     flex-wrap: wrap;
     width: 78%;
@@ -64,7 +75,7 @@ span.photoSection{
         margin-top:0%!important;
         width: 30%!important;
     }
-    .makeAdmin form {
+    .book form {
         display: inline-block;
         width: 78%;
         margin-top: 1%important;
@@ -76,10 +87,10 @@ span.photoSection{
         font-size: 1rem;
     }
     
-.makeAdmin input{
+.book input{
     width: 100%!important;
 }
-.makeAdmin label{
+.book label{
     width: 75%!important;
     margin-left: 0%!important;
 }

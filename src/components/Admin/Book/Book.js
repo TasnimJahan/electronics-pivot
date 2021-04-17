@@ -41,12 +41,20 @@ const Book = () => {
     return (
         <div>
             <Sidebar/>  
-            <div className="makeAdmin">
-                <h2>Make an Admin</h2> 
-                <h5>Book section id is= {id}</h5>
-                <h5>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || "For test Tasnim"}</h5>
-                <h5>{loggedInUser.email || "email here for test"}</h5>
-                <h5>{book.serviceTitle}</h5>
+            <div className="book">
+                <div className=" headSection d-flex justify-content-between">
+                    <h2>Make an Admin</h2> 
+                    <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || " "}</h4>
+                </div> 
+                    
+                <div className="userDetail mb-3">
+                    <h5>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || "For test Tasnim"}</h5>
+                    <h5>{loggedInUser.email || "email here for test"}</h5>
+                    <h5>{book.serviceTitle}</h5>
+                </div>
+                <div className="paymentDetails">
+                    <p>Pay With:</p>
+                </div>
             </div>    
         </div>
     );
