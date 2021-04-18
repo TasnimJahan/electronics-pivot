@@ -48,7 +48,7 @@ const Book = () => {
             <Sidebar/>  
             <div className="book">
                 <div className=" headSection d-flex justify-content-between">
-                    <h2>Make an Admin</h2> 
+                    <h2>Book</h2> 
                     <h4>{loggedInUser.name || loggedInUser.displayName || loggedInUser.userName || " "}</h4>
                 </div> 
                     

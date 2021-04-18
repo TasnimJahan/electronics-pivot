@@ -7,7 +7,7 @@ nav.navbar.navbar-expand-lg.navbar-light.rounded {
 .header.container {
     position: absolute;
     z-index: 1000;
-    left: 14%;
+    left: 6%;
     /* background-color: black; */
 }
 nav{

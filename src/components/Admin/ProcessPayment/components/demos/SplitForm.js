@@ -57,7 +57,7 @@ const SplitForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="splitForm" onSubmit={handleSubmit}>
       <label id="cardNumber">
         Card number
         <CardNumberElement
