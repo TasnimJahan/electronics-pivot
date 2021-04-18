@@ -26,7 +26,7 @@ const Sidebar = () => {
                 {
                     isAdmin && <div>
                         <li>
-                            <Link to="/dashboard" className="text-white">
+                            <Link to="/allOrders" className="text-white">
                                 <FontAwesomeIcon className="icons" icon={faGripHorizontal} /> <span style={{marginLeft:'10%'}}>Order List</span> 
                             </Link>
                         </li>
