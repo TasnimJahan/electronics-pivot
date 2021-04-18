@@ -9,7 +9,7 @@ const BookingList = () => {
     console.log(orders);
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     useEffect(() => {
-        fetch('http://localhost:5000/bookings/?email='+loggedInUser.email, {
+        fetch('https://peaceful-coast-73791.herokuapp.com/?email='+loggedInUser.email, {
             method: 'GET',
             headers: { 
                 'Content-Type': 'application/json',

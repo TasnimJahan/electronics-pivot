@@ -68,7 +68,7 @@ const SplitForm = ({book,loggedInUser}) => {
   
 const handleOrders = () => {
   const newOrders = {...loggedInUser,serviceName,serviceDescription,serviceImg};
-  fetch('http://localhost:5000/addBook', {
+  fetch('https://peaceful-coast-73791.herokuapp.com/addBook', {
       method:'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(newOrders)
