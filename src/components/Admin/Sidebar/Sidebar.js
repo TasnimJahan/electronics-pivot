@@ -49,21 +49,25 @@ const Sidebar = () => {
                     </div>
                 }
                         
-                        <li>
-                            <Link to="/book" className="text-white">
-                                <FontAwesomeIcon className="icons" icon={faShoppingCart} /> <span style={{marginLeft:'9%'}}>Book</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/bookingList" className="text-white" >
-                            <FontAwesomeIcon className="icons" icon={faLock} /> <span style={{marginLeft:'11%'}}>Booking List</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/addReview" className="text-white" >
-                            <FontAwesomeIcon className="icons" icon={faComments} /> <span style={{marginLeft:'9%'}}>Review</span>
-                            </Link>
-                        </li>
+                       {
+                           !isAdmin && <div>
+                                <li>
+                                    <Link to="/book" className="text-white">
+                                        <FontAwesomeIcon className="icons" icon={faShoppingCart} /> <span style={{marginLeft:'9%'}}>Book</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/bookingList" className="text-white" >
+                                    <FontAwesomeIcon className="icons" icon={faLock} /> <span style={{marginLeft:'11%'}}>Booking List</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/addReview" className="text-white" >
+                                    <FontAwesomeIcon className="icons" icon={faComments} /> <span style={{marginLeft:'9%'}}>Review</span>
+                                    </Link>
+                                </li>
+                           </div>
+                       }
                     
             
             </ul>

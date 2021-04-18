@@ -67,6 +67,10 @@ span.photo{
         margin-top:0%!important;
         width: 30%!important;
     }
+    .addService {
+        width: 59%!important;
+        margin-left: 41%!important;
+    }
     .addService form {
         display: inline-block;
         width: 78%;

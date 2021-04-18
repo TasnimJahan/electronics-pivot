@@ -13,6 +13,7 @@ import BookingList from "./components/Admin/BookingList/BookingList";
 import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";
 import ManageService from "./components/Admin/ManageService/ManageService";
 import OrderLists from "./components/Admin/OrderLists/OrderLists";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
 
@@ -27,33 +28,33 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <Route path="/admin">
-              <Admin />
-            </Route>
-            <Route path="/makeAdmin">
+            <PrivateRoute path="/admin">
+             <Admin/>
+            </PrivateRoute>
+            <PrivateRoute path="/makeAdmin">
               <MakeAdmin />
-            </Route>
-            <Route path="/addServices">
+            </PrivateRoute>
+            <PrivateRoute path="/addServices">
               <AddServices/>
-            </Route>
-            <Route path="/addReview">
+            </PrivateRoute>
+            <PrivateRoute path="/addReview">
               <AddReview/>
-            </Route>
-            <Route path="/bookingList">
+            </PrivateRoute>
+            <PrivateRoute path="/bookingList">
               <BookingList/>
-            </Route>
-            <Route path="/allOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/allOrders">
               <OrderLists/>
-            </Route>
-            <Route path="/manageService">
+            </PrivateRoute>
+            <PrivateRoute path="/manageService">
               <ManageService/>
+            </PrivateRoute>
+            <Route path="/book">
+              <Home/>
             </Route>
-            {/* <Route path="/book">
-              <Book/>
-            </Route> */}
-            <Route path="/book/:id">
+            <PrivateRoute path="/book/:id">
               <Book></Book>
-            </Route>
+            </PrivateRoute>
             {/* <Route path="/appointment">
               <Appointment />
             </Route>

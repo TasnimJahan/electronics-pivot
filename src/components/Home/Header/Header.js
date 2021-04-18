@@ -17,7 +17,7 @@ const Header = () => {
                     src={laptop}
                     alt="First slide"
                     />
-                    <Carousel.Caption style={{paddingBottom: '19%'}}>
+                    <Carousel.Caption style={{paddingBottom: '13%'}}>
                     <h3 className="heading">Amazing PC support and Exchange</h3>
                     <p className="headingQuote">Fast and Affordable Price.</p>
                     </Carousel.Caption>

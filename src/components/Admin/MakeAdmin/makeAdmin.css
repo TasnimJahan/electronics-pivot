@@ -69,6 +69,10 @@ span.photoSection{
         margin-top:0%!important;
         width: 30%!important;
     }
+    .makeAdmin {
+        width: 59%!important;
+        margin-left: 41%!important;
+    }
     .makeAdmin form {
         display: inline-block;
         width: 78%;

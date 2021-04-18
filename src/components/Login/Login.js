@@ -48,6 +48,7 @@ const Login = () => {
     }
     return (
         <div className="login">
+            <p className="titleInLogin">Electronics Pivot</p>
             <h1>Login</h1>
             <button id="loginButton" onClick={handleGoogleSignIn}><img id="googleIcon" style={{width:'2rem'}} src={googleIcon} alt=""/> Continue With Google</button>
         </div>

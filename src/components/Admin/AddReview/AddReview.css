@@ -74,6 +74,10 @@ span.review{
         margin-top:0%!important;
         width: 30%!important;
     }
+    .form.addReview {
+        width: 59%!important;
+        margin-left: 41%!important;
+    }
     .addReview form {
         display: inline-block;
         width: 78%;
