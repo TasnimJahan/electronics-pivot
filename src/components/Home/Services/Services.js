@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import servicePhoto from '../../../images/serviceImg.jpg'
+// import servicePhoto from '../../../images/serviceImg.jpg'
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 import './Services.css'
 const Services = () => {

@@ -2,7 +2,6 @@ import React from 'react';
 import { useContext } from 'react';
 import './DeleteService.css'
 import DeleteIcon from '../../../icons/delete.png'
-// import 'date-fns';
 import { UserContext } from '../../../App';
 
 

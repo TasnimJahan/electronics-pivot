@@ -55,24 +55,6 @@ function App() {
             <PrivateRoute path="/book/:id">
               <Book></Book>
             </PrivateRoute>
-            {/* <Route path="/appointment">
-              <Appointment />
-            </Route>
-            <PrivateRoute path="/dashboard/appointment">
-              <Dashboard/>
-            </PrivateRoute>
-            <PrivateRoute path="/dashboard/allPatients">
-            <AllPatients></AllPatients>
-          </PrivateRoute>
-            <PrivateRoute path="/dashboard/prescriptions">
-            <Prescriptions/>
-          </PrivateRoute>
-            <PrivateRoute path="/dashboard/addDoctor">
-            <AddDoctor/>
-          </PrivateRoute>
-          <PrivateRoute path="/dashboard">
-            <OverAllAppointmentDashboard/>
-          </PrivateRoute> */}
             <Route path="/login">
             <Login></Login>
             </Route>

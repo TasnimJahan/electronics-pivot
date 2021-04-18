@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServiceDetails.css'
+// import {useSpring, animated} from 'react-spring'
 import servicePhoto from '../../../images/serviceImg.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';

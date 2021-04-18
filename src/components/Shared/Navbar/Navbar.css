@@ -8,7 +8,6 @@ nav.navbar.navbar-expand-lg.navbar-light.rounded {
     position: absolute;
     z-index: 1000;
     left: 6%;
-    /* background-color: black; */
 }
 nav{
     box-sizing: border-box;

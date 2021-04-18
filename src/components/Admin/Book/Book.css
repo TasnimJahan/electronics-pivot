@@ -24,14 +24,6 @@
     position: absolute;
 
 }
-/* .book input{
-    width: 77%;
-    margin-left: 3%;
-    border: none;
-    border-top: 1px solid grey;
-    border-radius: 10px;
-    background: #f3c247;;
-} */
 #submit {
     border: 2px solid blue;
     width: 7rem;
@@ -41,20 +33,6 @@
     border-radius: 20px;
     margin-left: 5%;
 }
-/* .book form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 78%;
-    margin-bottom: 3%;
-    box-shadow: 10px 10px 20px grey;
-    border-radius: 10px;
-    padding: 2%;
-    background-image:  linear-gradient(
-        40deg
-        , #ff07a7,#ff5722);
-    color: white;
-    font-size: 1.3rem;
-} */
 span.descriptionSection {
     margin-left: -56%;
 }
@@ -77,21 +55,7 @@ span.nameSection,.email{
         margin-top:0%!important;
         width: 30%!important;
     }
-    /* .book form {
-        display: inline-block;
-        width: 78%;
-        margin-top: 1%important;
-        box-shadow: 10px 10px 20px grey;
-        border-radius: 10px;
-        padding: 2%;
-        background: #d6282f;
-        color: white;
-        font-size: 1rem;
-    } */
     
-/* .book input{
-    width: 100%!important;
-} */
 .book label{
     width: 75%!important;
     margin-left: 0%!important;
