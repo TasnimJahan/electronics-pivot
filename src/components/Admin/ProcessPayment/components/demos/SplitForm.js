@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import {
   useStripe,
   useElements,
@@ -9,6 +9,7 @@ import {
 import './SplitForm.css'
 
 import useResponsiveFontSize from "../../useResponsiveFontSize";
+import { UserContext } from "../../../../../App";
 
 const useOptions = () => {
   const fontSize = useResponsiveFontSize();
@@ -35,7 +36,14 @@ const useOptions = () => {
   return options;
 };
 
-const SplitForm = () => {
+const SplitForm = ({book,loggedInUser}) => {
+  console.log(book,loggedInUser);
+  // const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+    const serviceName= book?.serviceTitle;
+    const serviceDescription=book?.description;
+    const serviceImg=book?.imageUrl;
+
+
   const stripe = useStripe();
   const elements = useElements();
   const options = useOptions();
@@ -55,6 +63,22 @@ const SplitForm = () => {
     });
     console.log("[PaymentMethod]", payload);
   };
+
+
+  
+const handleOrders = () => {
+  const newOrders = {...loggedInUser,serviceName,serviceDescription,serviceImg};
+  fetch('http://localhost:5000/addBook', {
+      method:'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(newOrders)
+  })
+  .then(response => response.json())
+  .then(data=>{
+      console.log(data);
+  })
+
+}
 
   return (
     <form id="splitForm" onSubmit={handleSubmit}>
@@ -116,7 +140,7 @@ const SplitForm = () => {
       <br/>
       <div className="d-flex justify-content-between ">
         <span><h6>Your Service charge is 1000$</h6></span>
-        <span><button type="submit" disabled={!stripe}>
+        <span><button type="submit" disabled={!stripe} onClick={handleOrders} >
           Pay
         </button></span>
       </div>

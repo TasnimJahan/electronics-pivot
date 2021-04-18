@@ -59,7 +59,7 @@ const Book = () => {
                 </div>
                 <div className="paymentDetails">
                     <p>Pay With:</p>
-                    <Payment/>
+                    <Payment book={book} loggedInUser={loggedInUser}></Payment>
                 </div>
             </div>    
         </div>

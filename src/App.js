@@ -9,6 +9,7 @@ import AddReview from "./components/Admin/AddReview/AddReview";
 import AddServices from "./components/Admin/AddServices/AddServices";
 import Admin from "./components/Admin/Admin/Admin";
 import Book from "./components/Admin/Book/Book";
+import BookingList from "./components/Admin/BookingList/BookingList";
 import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";
 import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route path="/addReview">
               <AddReview/>
+            </Route>
+            <Route path="/bookingList">
+              <BookingList/>
             </Route>
             {/* <Route path="/book">
               <Book/>
