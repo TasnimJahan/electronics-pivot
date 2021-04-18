@@ -42,7 +42,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/dashboard/prescriptions" className="text-white">
+                            <Link to="/manageService" className="text-white">
                                 <FontAwesomeIcon className="icons" icon={faFileAlt} /> <span style={{marginLeft:'12%'}}>Manage Service</span>
                             </Link>
                         </li>
