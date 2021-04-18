@@ -15,7 +15,9 @@ import { useContext } from 'react';
 // import { Button } from '@material-ui/core';
 import { UserContext } from '../../../App';
 import Sidebar from '../Sidebar/Sidebar';
-import ProcessPayment from '../ProcessPayment/ProcessPayment';
+// import ProcessPayment from '../ProcessPayment/ProcessPayment';
+import Payment from '../ProcessPayment/Payment';
+// import Payment from '../ProcessPayment/payment';
 // import Orders from '../Orders/Orders';
 
 
@@ -24,7 +26,7 @@ const Book = () => {
     console.log(id);
     const [book,setBook]=useState({})
     useEffect(() => {
-        fetch(`https://peaceful-coast-73791.herokuapp.com/${id}`)
+        fetch(`https://peaceful-coast-73791.herokuapp.com/services/${id}`)
         .then((response) =>response.json())
         .then(data => {
             console.log(data[0])
@@ -32,6 +34,7 @@ const Book = () => {
         })
     },[])
     console.log(book);
+    console.log(book.serviceTitle);
     const bookingName= book.serviceTitle;
     const bookingDescription= book.description;
     const bookingImage= book.imageUrl;
@@ -56,7 +59,7 @@ const Book = () => {
                 </div>
                 <div className="paymentDetails">
                     <p>Pay With:</p>
-                    <ProcessPayment/>
+                    <Payment/>
                 </div>
             </div>    
         </div>

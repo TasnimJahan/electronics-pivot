@@ -24,14 +24,14 @@
     position: absolute;
 
 }
-.book input{
+/* .book input{
     width: 77%;
     margin-left: 3%;
     border: none;
     border-top: 1px solid grey;
     border-radius: 10px;
     background: #f3c247;;
-}
+} */
 #submit {
     border: 2px solid blue;
     width: 7rem;
@@ -41,7 +41,7 @@
     border-radius: 20px;
     margin-left: 5%;
 }
-.book form {
+/* .book form {
     display: flex;
     flex-wrap: wrap;
     width: 78%;
@@ -54,7 +54,7 @@
         , #ff07a7,#ff5722);
     color: white;
     font-size: 1.3rem;
-}
+} */
 span.descriptionSection {
     margin-left: -56%;
 }
@@ -66,16 +66,18 @@ span.nameSection,.email{
     /* border: 1px solid blue; */
     margin-left: 2%;
 }
-span.photoSection{
-    /* border: 1px solid blue; */
-    margin-left: -48%;
+.paymentDetails{
+    border: 1px solid blue;
+    width: 50%;
+    padding: 1%;
 }
+
 @media (max-width: 688px){
     #submit{
         margin-top:0%!important;
         width: 30%!important;
     }
-    .book form {
+    /* .book form {
         display: inline-block;
         width: 78%;
         margin-top: 1%important;
@@ -85,11 +87,11 @@ span.photoSection{
         background: #d6282f;
         color: white;
         font-size: 1rem;
-    }
+    } */
     
-.book input{
+/* .book input{
     width: 100%!important;
-}
+} */
 .book label{
     width: 75%!important;
     margin-left: 0%!important;
