@@ -24,7 +24,7 @@ const Book = () => {
     console.log(id);
     const [book,setBook]=useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://peaceful-coast-73791.herokuapp.com/${id}`)
         .then((response) =>response.json())
         .then(data => {
             console.log(data[0])

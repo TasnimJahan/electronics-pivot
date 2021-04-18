@@ -17,7 +17,7 @@ const AddServices = () => {
             description: data.description,
             imageUrl: imageUrl
         }
-        const url = `http://localhost:5000/addServices`;
+        const url = `https://peaceful-coast-73791.herokuapp.com/addServices`;
         fetch(url, {
             method: 'POST',
             headers: {

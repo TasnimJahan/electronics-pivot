@@ -14,7 +14,7 @@ const AddReview = () => {
             name: data.name,
             review: data.review,
         }
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://peaceful-coast-73791.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {
