@@ -49,9 +49,9 @@ function App() {
             <PrivateRoute path="/manageService">
               <ManageService/>
             </PrivateRoute>
-            <Route path="/book">
+            {/* <Route path="/book">
               <Home/>
-            </Route>
+            </Route> */}
             <PrivateRoute path="/book/:id">
               <Book></Book>
             </PrivateRoute>
