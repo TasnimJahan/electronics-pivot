@@ -1,13 +1,23 @@
-div#navbarsExample09 {
-    margin-left: 38%;
+div.navbar-toggler{
+    display: flex;
+    justify-content: flex-end;
 }
+ul.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+div#navbarsExample09 ul.navbar-nav {
+    align-items: center;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light.rounded {
     width: 100%;
 }
-.header.container {
+.header{
     position: absolute;
     z-index: 1000;
-    left: 6%;
+    /* left: 6%; */
+    width: 100%;
 }
 nav{
     box-sizing: border-box;
@@ -29,14 +39,19 @@ color: chartreuse;
     font-weight: 600;
 }
 .navbar-toggler{
-    position: absolute;
-    right: 0;
-    border: 1px solid red;
+    /* right: 0; */
+    /* border: 1px solid red; */
 }
 .navbar-light .navbar-brand {
     color: #ffeb3b;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5em;
+}
+button.custom-toggler.navbar-toggler {
+    /* right: -50%; */
+    left: 90%;
+    background: #ffeb3b;
+    font-size: 1em;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: rgb(255 255 255);
@@ -44,9 +59,8 @@ color: chartreuse;
 
 @media (max-width: 688px){
     .navbar-light .navbar-brand {
-        color: #ffeb3b;;
-        margin-left: 6%;
-        font-size: 2rem!important;
+        color: #ffeb3b;
+        font-size: 1rem!important;
     }
     .deleteIcon {
         width: 25%;

@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     return (
-        <div className="header container">
+        <div className="header">
             <div className="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
                     <a className="navbar-brand" href="#">ELECTRONICS PIVOT</a>
